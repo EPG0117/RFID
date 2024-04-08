@@ -60,6 +60,11 @@ if(!isset($_SESSION['name'])) {
                             >Puestos
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="<?php echo $url_base; ?>components/registro_entradas.php"
+                            >Registro entradas/salidas
+                        </a>
+                    </li>
                     
                     <li class="nav-item">
                         <a class="nav-link active" href="<?php echo $url_base; ?>cerrar.php"

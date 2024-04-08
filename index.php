@@ -5,9 +5,6 @@
             <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Bienvenid@ al sistema <?php echo $_SESSION['name']; ?> !!! </h1>
                 <br>
-                <button class="btn btn-primary btn-lg" type="button">
-                    Example
-                </button>
             </div>
         </div>
             

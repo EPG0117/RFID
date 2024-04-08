@@ -1,6 +1,6 @@
 <?php
 
-    $servidor = "127.0.0.1"; //* 127.0.0.1
+    $servidor = "127.0.0.1"; //* localhost
     $baseDeDatos = "app";
     $usuario = "root";
     $contrasena = "";
