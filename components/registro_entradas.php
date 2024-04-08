@@ -2,7 +2,7 @@
 include('../db.php');
 
     $sentencia=$conexion->prepare("SELECT *, (SELECT first_name FROM employees WHERE employees.id=registers.employee_id LIMIT 1) 
-                                            AS namee FROM registers");
+                                            AS employee_name FROM registers");
     $sentencia->execute();
     $register_list = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -34,7 +34,7 @@ include('../db.php');
                     <?php foreach($register_list as $register) { ?>
                         <tr>
                         <td><?php echo $register['id']; ?></td>
-                            <td><?php echo $register['namee']; ?></td>
+                            <td><?php echo $register['employee_name']; ?></td>
                             <td><?php echo $register['time_entry']; ?></td>
                             <td><?php echo $register['time_departure']; ?></td>
                         </tr>
